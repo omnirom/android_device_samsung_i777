@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2015 The Custom Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ TARGET_KERNEL_CONFIG := custom_i777_defconfig
 TARGET_OTA_ASSERT_DEVICE := i777,SGH-I777,SGH-S959G
 
 # TWRP
-DEVICE_RESOLUTION := 480x800
+DEVICE_RESOLUTION := 400x800
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/i777/BoardConfigVendor.mk

@@ -142,4 +142,22 @@
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">29</integer>
 
+    <!-- Disable the home key unlock setting -->
+    <!-- <bool name="config_disableHomeUnlockSetting">false</bool> -->
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">4</integer>
+
+    <!--  Whether multiuser UI should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
+
+    <!-- Control the behavior when the user long presses the home button
+            0 - Nothing
+            1 - Menu key
+            2 - Recent apps view in SystemUI
+            3 - Launch assist intent
+            4 - Voice Search
+            5 - In-app Search
+    -->
+    <integer name="config_longPressOnHomeBehavior">2</integer>
 </resources>
