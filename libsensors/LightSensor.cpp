@@ -22,11 +22,9 @@
 #include <dirent.h>
 #include <sys/select.h>
 
-#include <linux/lightsensor.h>
+#include "LightSensor.h"
 
 #include <cutils/log.h>
-
-#include "LightSensor.h"
 
 // #define ALOG_NDEBUG 0
 
@@ -137,10 +135,10 @@ int LightSensor::readEvents(sensors_event_t* data, int count)
         if (type == EV_ABS) {
             if (event->code == EVENT_TYPE_LIGHT) {
                 if (event->value != -1) {
-                    ALOGV("LightSensor: event (value=%d)", event->value);
-                    // FIXME: not sure why we're getting -1 sometimes
-                    mPendingEvent.light = event->value;
-                }
+					ALOGV("LightSensor: event (value=%d)", event->value);
+					// FIXME: not sure why we're getting -1 sometimes
+					mPendingEvent.light = event->value;
+               }
             }
         } else if (type == EV_SYN) {
             mPendingEvent.timestamp = timevalToNano(event->time);
