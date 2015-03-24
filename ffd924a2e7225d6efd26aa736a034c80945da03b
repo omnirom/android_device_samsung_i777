@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6b22818b_089ad116",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1000174
+      },
+      "writtenOn": "2015-03-24T04:57:38Z",
+      "side": 0,
+      "message": "Why delete the sensors? Are you sure you are not going to need this?",
+      "revId": "ffd924a2e7225d6efd26aa736a034c80945da03b",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
